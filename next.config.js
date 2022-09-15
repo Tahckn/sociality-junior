@@ -4,4 +4,15 @@ const nextConfig = {
   swcMinify: true,
 }
 
-module.exports = nextConfig
+;(module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 's3-eu-west-1.amazonaws.com',
+        pathname: '/a6apptest/public/files/**',
+      },
+    ],
+  },
+}),
+  nextConfig

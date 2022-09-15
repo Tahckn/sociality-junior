@@ -1,18 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Raleway:wght@400;700&display=swap');
+
+:root {
+  --published-color: rgb(171, 171, 171);
+  --scheduled-color: rgb(57, 193, 131);
+  --needapproval-color: rgb(247, 191, 56);
+  --error-color: rgb(251, 100, 80);
+  --notes-color: rgb(103, 177, 242);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  font-family: Raleway;
 }
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: Barlow Semi Condensed;
+  font-size: 22px;
+  font-weight: 400;
+  color: #959595;
+}
+
+main {
+  width: 90vw;
+  height: 100vh;
+  margin: 10px auto;
+}
+
+.status-container {
+  display: flex;
+  gap: 10px;
+}
+
+.status-color {
+  display: flex;
+  gap: 10px;
+}
+
+.status-color p {
+  font-family: Raleway;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+#status-color1 {
+  margin: 22px 0px 0 10px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--published-color);
+}
+#status-color2 {
+  margin: 22px 0px 0 15px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--scheduled-color);
+}
+#status-color3 {
+  margin: 22px 0px 0 15px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--needapproval-color);
+}
+#status-color4 {
+  margin: 22px 0px 0 15px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--error-color);
+}
+#status-color5 {
+  margin: 22px 0px 0 15px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--notes-color);
+}
+
+.post-card {
+  display: flex;
+  width: 369px;
+  height: 426px;
+  border-radius: 6px;
+  border: 1px solid #e6e6ee;
+  background-color: #ffffff;
+}
+
+.post-card-social {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #39c183;
+  border-radius: 6px 0 0 6px;
+}
+
+.post {
+  margin: 0px auto;
+  width: 80%;
+  border-radius: 0 6px 6px 0px;
+}
+
+.date {
+  margin-top: 22px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #acacac;
+  font-family: Raleway;
+}
+.post-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-text {
+  font-family: Raleway;
+  font-weight: 700;
+  color: #959595;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.reactions {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.reactions p {
+  font-size: 12px;
+  line-height: 15px;
+  color: #444444;
+  font-family: 'Raleway';
+  font-weight: 500;
+  margin-top: 5px;
+  margin-right: 13px;
+  margin-left: -2px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +157,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: rgb(75, 75, 75);
+    background: rgb(245, 247, 248);
   }
 }
