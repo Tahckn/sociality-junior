@@ -1,14 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { BiBlock } from 'react-icons/bi'
-import { BiTrash } from 'react-icons/bi'
-import { TbChecks } from 'react-icons/tb'
-import { HiOutlineDotsCircleHorizontal } from 'react-icons/hi'
-import { ImFacebook } from 'react-icons/im'
-import { BiLike } from 'react-icons/bi'
-import { BiComment } from 'react-icons/bi'
-import { BiShareAlt } from 'react-icons/bi'
-import { BiShow } from 'react-icons/bi'
+import { PostCard, Header } from '../components/'
 
 export default function Home() {
   return (
@@ -20,77 +11,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <header>
-          <div className="status-container">
-            <div className="status-color">
-              <div id="status-color1"></div>
-              <p>Published</p>
-            </div>
-
-            <div className="status-color">
-              <div id="status-color2"></div>
-              <p>Scheduled</p>
-            </div>
-
-            <div className="status-color">
-              <div id="status-color3"></div>
-              <p>Need Approval</p>
-            </div>
-
-            <div className="status-color">
-              <div id="status-color4"></div>
-              <p>Error</p>
-            </div>
-
-            <div className="status-color">
-              <div id="status-color5"></div>
-              <p>Notes</p>
-            </div>
-          </div>
-          <h1>14 January 2016</h1>
-          <div className="post-container">
-            <div className="post-card">
-              <div className="post-card-social">
-                <ImFacebook size="23" color="white" />
-              </div>
-              <div className="post">
-                <div className="post-header">
-                  <p className="date">14 January 2016 - 14:30</p>
-                  <div className="actions">
-                    <TbChecks size="20" color="#acacac" />
-                    <BiBlock size="20" color="#acacac" />
-                    <BiTrash size="20" color="#acacac" />
-                    <HiOutlineDotsCircleHorizontal size="20" color="#acacac" />
-                  </div>
-                </div>
-                <p className="post-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestiae esse autem sunt tempore.
-                </p>
-                <div className="photo">
-                  <Image
-                    src="https://s3-eu-west-1.amazonaws.com/a6apptest/public/files/58bab4018803fa0008413733_0A0szw7OSDIVt2rq80.jpeg"
-                    alt="tata"
-                    width={283}
-                    height={239}
-                  />
-                </div>
-                <div className="reactions">
-                  <BiLike size="20" color="#444444" />
-                  <p>0</p>
-                  <BiComment size="20" color="#444444" />
-                  <p>0</p>
-                  <BiShareAlt size="20" color="#444444" />
-                  <p>0</p>
-                  <BiShow size="21" color="#444444" />
-                  <p>0</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
-
-        <nav></nav>
+        <Header />
+        <PostCard />
       </main>
     </div>
   )
