@@ -83,7 +83,9 @@ main {
   border-radius: 50%;
   background-color: var(--notes-color);
 }
-
+.post-card-daily {
+  display: flex;
+}
 .post-card {
   display: flex;
   width: 369px;
