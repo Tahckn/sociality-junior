@@ -1,0 +1,54 @@
+.statuscontainer {
+  max-width: 90vw;
+  display: flex;
+  gap: 10px;
+  margin: 10px auto;
+}
+
+.statuscolor {
+  display: flex;
+  gap: 10px;
+}
+
+.statuscolor p {
+  font-family: Raleway;
+  font-size: 14px;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+
+.statuscolor1 {
+  margin: 22px 0px 0 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgb(171, 171, 171);
+}
+.statuscolor2 {
+  margin: 22px 0px 0 15px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgb(57, 193, 131);
+}
+.statuscolor3 {
+  margin: 22px 0px 0 15px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgb(247, 191, 56);
+}
+.statuscolor4 {
+  margin: 22px 0px 0 15px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgb(251, 100, 80);
+}
+.statuscolor5 {
+  margin: 22px 0px 0 15px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgb(103, 177, 242);
+}

@@ -26,6 +26,21 @@ h1 {
   color: #959595;
 }
 
+.spacer {
+  min-width: 300px;
+}
+
+.page-wrapper {
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+
+.status-container {
+  max-width: 90vw;
+  margin: 10px auto;
+}
+
 main {
   max-width: 90vw;
   height: 100vh;
@@ -36,65 +51,13 @@ main {
   width: fit-content;
 }
 
-.status-container {
-  display: flex;
-  gap: 10px;
-}
-
-.status-color {
-  display: flex;
-  gap: 10px;
-}
-
-.status-color p {
-  font-family: Raleway;
-  font-size: 14px;
-  margin-top: 20px;
-  white-space: nowrap;
-}
-
-#status-color1 {
-  margin: 22px 0px 0 10px;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background-color: var(--published-color);
-}
-#status-color2 {
-  margin: 22px 0px 0 15px;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background-color: var(--scheduled-color);
-}
-#status-color3 {
-  margin: 22px 0px 0 15px;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background-color: var(--needapproval-color);
-}
-#status-color4 {
-  margin: 22px 0px 0 15px;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background-color: var(--error-color);
-}
-#status-color5 {
-  margin: 22px 0px 0 15px;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background-color: var(--notes-color);
-}
 .daily-post {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 30px;
 }
 
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 1450px) {
   .daily-post {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -102,7 +65,7 @@ main {
     transition: all 0.3s ease;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1030px) {
   .daily-post {
     display: grid;
     grid-template-columns: 1fr;

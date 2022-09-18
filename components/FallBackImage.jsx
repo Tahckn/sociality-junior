@@ -11,11 +11,11 @@ export const FallBackImage = ({ src, ...rest }) => {
   return (
     <Image
       {...rest}
-      src={imgSrc ? imgSrc : '/no-post-image.png'}
+      src={imgSrc ? imgSrc : '/images/no-post-image.png'}
       onError={() => {
-        setImgSrc('/no-post-image.png')
+        setImgSrc('/images/no-post-image.png')
       }}
-      alt="no-image"
+      alt="no-post-image"
     />
   )
 }
