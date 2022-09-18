@@ -27,7 +27,7 @@ h1 {
 }
 
 main {
-  width: 90vw;
+  max-width: 90vw;
   height: 100vh;
   margin: 10px auto;
 }
@@ -46,6 +46,7 @@ main {
   font-family: Raleway;
   font-size: 14px;
   margin-top: 20px;
+  white-space: nowrap;
 }
 
 #status-color1 {
@@ -83,9 +84,34 @@ main {
   border-radius: 50%;
   background-color: var(--notes-color);
 }
-.post-card-daily {
-  display: flex;
+.daily-post {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
+
+@media only screen and (max-width: 968px) {
+  main {
+    max-width: 50vw;
+    height: 100vh;
+    margin: 10px;
+  }
+  .daily-post {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    transition: all 0.3s ease;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .daily-post {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    transition: all 0.3s ease;
+  }
+}
+
 .post-card {
   display: flex;
   width: 369px;
@@ -101,8 +127,18 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #39c183;
+  background: var(--published-color);
   border-radius: 6px 0 0 6px;
+}
+
+.post-card-socialfacebook {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px 0 0 6px;
+  background: green;
 }
 
 .post {
