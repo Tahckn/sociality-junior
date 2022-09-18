@@ -32,6 +32,10 @@ main {
   margin: 10px auto;
 }
 
+.post-container {
+  width: fit-content;
+}
+
 .status-container {
   display: flex;
   gap: 10px;
@@ -86,28 +90,23 @@ main {
 }
 .daily-post {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 30px;
 }
 
 @media only screen and (max-width: 968px) {
-  main {
-    max-width: 50vw;
-    height: 100vh;
-    margin: 10px;
-  }
   .daily-post {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
     transition: all 0.3s ease;
   }
 }
 @media only screen and (max-width: 600px) {
   .daily-post {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 30px;
     transition: all 0.3s ease;
   }
 }
@@ -121,30 +120,11 @@ main {
   background-color: #ffffff;
 }
 
-.post-card-social {
-  width: 40px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--published-color);
-  border-radius: 6px 0 0 6px;
-}
-
-.post-card-socialfacebook {
-  width: 40px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px 0 0 6px;
-  background: green;
-}
-
 .post {
   margin: 0px auto;
   width: 80%;
   border-radius: 0 6px 6px 0px;
+  position: relative;
 }
 
 .date {
@@ -163,8 +143,16 @@ main {
   font-family: Raleway;
   font-weight: 700;
   color: #959595;
+  margin: 15px 0px 10px 0px;
   font-size: 14px;
   line-height: 20px;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .actions {
@@ -175,8 +163,9 @@ main {
 
 .reactions {
   display: flex;
+  position: absolute;
   gap: 5px;
-  margin-top: 10px;
+  bottom: 0px;
 }
 
 .reactions p {

@@ -15,7 +15,7 @@ export const FallBackImage = ({ src, ...rest }) => {
       onError={() => {
         setImgSrc('/no-post-image.png')
       }}
-      alt=""
+      alt="no-image"
     />
   )
 }
