@@ -9,4 +9,4 @@ npm run dev
 # or
 yarn dev
 ```
-to see live = ''
+to see live = 'https://sociality-junior.netlify.app/'
