@@ -17,6 +17,12 @@
   vertical-align: middle;
 }
 
+@media only screen and (max-width: 750px) {
+  .container {
+    display: none;
+  }
+}
+
 .menucontainer {
   display: flex;
   width: 100%;

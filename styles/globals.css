@@ -35,6 +35,15 @@ h1 {
   position: relative;
   height: 100vh;
 }
+@media only screen and (max-width: 750px) {
+  .spacer {
+    display: none;
+  }
+  .page-wrapper {
+    max-width: 90vw;
+    margin-left: 30px;
+  }
+}
 
 .status-container {
   max-width: 90vw;

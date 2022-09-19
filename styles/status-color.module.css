@@ -1,10 +1,13 @@
 .photo {
   position: absolute;
-  float: right;
   top: 30px;
   right: 50px;
-  left: 850px;
-  margin-left: 920px;
+}
+
+@media only screen and (max-width: 1030px) {
+  .photo {
+    visibility: hidden;
+  }
 }
 
 .statuscontainer {
