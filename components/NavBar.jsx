@@ -8,6 +8,15 @@ import Icon4 from '../public/images/icon4.svg'
 import Icon5 from '../public/images/icon5.svg'
 import Icon6 from '../public/images/icon6.svg'
 
+import Engage from '../public/images/engage.svg'
+import Listen from '../public/images/listen.svg'
+import Notification from '../public/images/notification.svg'
+import Publish from '../public/images/publish.svg'
+import Summary from '../public/images/summary.svg'
+import Report from '../public/images/report.svg'
+import Cross from '../public/images/cross.svg'
+import Line from '../public/images/line.svg'
+
 const NavBar = () => {
   return (
     <div className={styles.container}>
@@ -31,6 +40,7 @@ const NavBar = () => {
             </div>
             <div className={styles.iconcontainer}>
               <Icon4 />
+              <div className={styles.active}></div>
             </div>
             <div className={styles.iconcontainer}>
               <Icon5 />
@@ -40,7 +50,49 @@ const NavBar = () => {
             </div>
           </div>
         </div>
-        <div className={styles.navmenu}></div>
+
+        <div className={styles.navmenu}>
+          <div className={styles.notificationcontainer}>
+            <Notification className={styles.menuicons} />
+            <p>NOTIFICATIONS</p>
+            <div className={styles.notification}>
+              <span>29</span>
+            </div>
+          </div>
+          <div className={styles.menu}>
+            <Summary className={styles.menuicons} />
+            <p>SUMMARY</p>
+            <Cross className={styles.cross} />
+          </div>
+          <div>
+            <div id={styles.chosen} className={styles.menuchosen}>
+              <Publish className={styles.menuicons} />
+              <p>PUBLISH</p>
+              <Line className={styles.cross} />
+            </div>
+            <div className={styles.accordioncontainer}>
+              <ul className={styles.accordion}>
+                <li className={styles.acc}>Compose</li>
+                <li className={styles.acc}>Feed</li>
+              </ul>
+            </div>
+          </div>
+          <div className={styles.menu}>
+            <Engage className={styles.menuicons} />
+            <p>ENGAGE</p>
+            <Cross className={styles.cross} />
+          </div>
+          <div className={styles.menu}>
+            <Listen className={styles.menuicons} />
+            <p> LISTEN</p>
+            <Cross className={styles.cross} />
+          </div>
+          <div className={styles.menu}>
+            <Report className={styles.menuicons} />
+            <p>REPORT</p>
+            <Cross className={styles.cross} />
+          </div>
+        </div>
       </div>
     </div>
   )

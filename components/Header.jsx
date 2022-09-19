@@ -1,9 +1,13 @@
 import React from 'react'
 import styles from '../styles/status-color.module.css'
+import Photo from '../public/images/photo.svg'
 
 const Header = () => {
   return (
     <header>
+      <div className={styles.photo}>
+        <Photo />
+      </div>
       <div className={styles.statuscontainer}>
         <div className={styles.statuscolor}>
           <div className={styles.statuscolor1}></div>

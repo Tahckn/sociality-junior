@@ -1,5 +1,14 @@
+.photo {
+  position: absolute;
+  float: right;
+  top: 30px;
+  right: 50px;
+  left: 850px;
+  margin-left: 920px;
+}
+
 .statuscontainer {
-  max-width: 90vw;
+  max-width: 84vw;
   display: flex;
   gap: 10px;
   margin: 10px auto;

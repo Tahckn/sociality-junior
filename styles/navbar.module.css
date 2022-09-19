@@ -25,8 +25,8 @@
 
 .navmenu {
   width: 208px;
-
   background-color: #393d42;
+  position: relative;
 }
 
 .navlogo {
@@ -65,4 +65,99 @@
   font-weight: bold;
   color: #ffffff;
   font-size: 9px;
+}
+
+.active {
+  width: 7.5px;
+  height: 37px;
+  background-color: #f55661;
+  position: absolute;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  top: 0px;
+  left: -17px;
+}
+
+.notificationcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.notificationcontainer p {
+  font-size: 14px;
+  color: #fffefe;
+  margin-top: 20px;
+}
+
+.menu p {
+  font-size: 14px;
+  color: #fffefe;
+  margin-top: 22px;
+}
+
+.notification {
+  width: 28px;
+  height: 17px;
+  border: 1px solid #73d9c7;
+  border-radius: 5px;
+  margin-left: -35px;
+}
+
+.notification span {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #fffefe;
+  font-size: 12px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.menuchosen {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  background-color: #f55661;
+  width: 100%;
+}
+.menuchosen p {
+  font-size: 14px;
+  margin-top: 22px;
+  color: #fffefe;
+}
+
+.menuicons {
+  margin-right: -38px;
+}
+
+.accordion {
+  font-size: 14px;
+  line-height: 17px;
+  color: #fffefe;
+}
+
+.accordioncontainer {
+  background-color: #32363a;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+  height: 107px;
+}
+
+.acc {
+  margin: 20px 0;
+}
+
+.acc:nth-child(2) {
+  color: #f55661;
 }
