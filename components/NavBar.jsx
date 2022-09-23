@@ -70,6 +70,7 @@ const NavBar = () => {
               <p>PUBLISH</p>
               <Line className={styles.cross} />
             </div>
+            <div className={styles.triangledown}></div>
             <div className={styles.accordioncontainer}>
               <ul className={styles.accordion}>
                 <li className={styles.acc}>Compose</li>
